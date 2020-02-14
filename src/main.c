@@ -10,9 +10,6 @@
 
 
 void set_button_style(lv_obj_t * btn) {
-  
-
-  
   // set the pressed style
   static lv_style_t style_btn_pr;
   lv_style_copy(&style_btn_pr, &lv_style_btn_pr);         /*Initialize from a built-in style*/
