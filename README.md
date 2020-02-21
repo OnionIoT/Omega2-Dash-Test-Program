@@ -27,14 +27,17 @@ Running Omega2 Dash Test Program!
 
 The Omega2 Dash will then show the following on the display:
 
-TODO: screenshot here
+![test program start](./img/test-program-start.jpg)
 
 > This confirms the display works correctly
 
 The tester shall press **all 5 buttons** to test the touchscreen works correctly. The expected end result:
 
-TODO: screenshot of end result here
+![test program end](./img/test-program-end.jpg)
 
+> This confirms the touch input works correctly
+
+The Omega2 Dash unit has now passed testing. Remove the USB drive and move on to the next unit.
 
 # Potential Future Improvements to Test Program
 
