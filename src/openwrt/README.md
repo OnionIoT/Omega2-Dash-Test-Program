@@ -2,12 +2,19 @@
 
 > Instructions on compiling omega2-dash-test-program package for Omega2 platform from source code in github repo specified by `PKG_SOURCE_URL` variable in the `Makefile` in this directory.
 
+Grab the path to this repo
+
+```
+cd <TOP LEVEL OF THIS REPO>
+REPO_PATH=$(pwd)
+```
+
 First add this makefile to the Onion feed in the build system:
 
 ```
 # assuming you're in the build system top directory
 mkdir feeds/onion/omega2-dash-test-program
-cp <PATH TO THIS REPO>/src/openwrt/Makefile feeds/onion/omega2-dash-test-program/
+cp $REPO_PATH/src/openwrt/Makefile feeds/onion/omega2-dash-test-program/
 ```
 
 Then install the package to the build system:
@@ -45,7 +52,7 @@ Then to switch to using the local source code
 
 ```
 make package/omega2-dash-test-program/clean
-make package/omega2-dash-test-program/prepare USE_SOURCE_DIR=<PATH TO omega2-dash-test-program CLONE DIRECTORY> V=s
+make package/omega2-dash-test-program/prepare USE_SOURCE_DIR=$REPO_PATH V=s
 make package/omega2-dash-test-program/compile V=99
 ```
 
