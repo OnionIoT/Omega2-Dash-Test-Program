@@ -84,12 +84,19 @@ int main(int argc, char *argv[]) {
   indev_drv.read_cb = xpt7603_read;      /*Set your driver function*/
   lv_indev_drv_register(&indev_drv);         /*Finally register the driver*/
   
-  /*Create 5 buttons*/
+  /*Create 9 buttons*/
   create_button(LV_ALIGN_IN_TOP_LEFT);
+  create_button(LV_ALIGN_IN_TOP_MID);
   create_button(LV_ALIGN_IN_TOP_RIGHT);
-  create_button(LV_ALIGN_IN_BOTTOM_LEFT);
-  create_button(LV_ALIGN_IN_BOTTOM_RIGHT);
+  
+  create_button(LV_ALIGN_IN_LEFT_MID);
   create_button(LV_ALIGN_CENTER);
+  create_button(LV_ALIGN_IN_RIGHT_MID);
+  
+  create_button(LV_ALIGN_IN_BOTTOM_LEFT);
+  create_button(LV_ALIGN_IN_BOTTOM_MID);
+  create_button(LV_ALIGN_IN_BOTTOM_RIGHT);
+  
   
   
   
