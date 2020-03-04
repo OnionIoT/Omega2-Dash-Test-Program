@@ -31,7 +31,7 @@ The Omega2 Dash will then show the following on the display:
 
 > This confirms the display works correctly
 
-The tester shall press **all 5 buttons** to test the touchscreen works correctly. The expected end result:
+The tester shall press **ALL of the buttons** to test the touchscreen works correctly. The expected end result:
 
 ![test program end](./img/test-program-end.jpg)
 
